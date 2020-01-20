@@ -1,0 +1,84 @@
+
+  
+  h1 {
+      text-align: center;
+    font-size: 5px;
+    color: rgb(255, 100, 139);
+    font-family: 'Bangers', cursive;
+   
+  }
+  .Headergame{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 100, 139);
+    font-family: 'Bangers', cursive;
+  }
+  .picgame{
+      text-align: center;
+      
+  }
+  .Discription{
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Bangers', cursive;
+  }
+
+.form{
+    text-align: center;
+}
+
+
+  h2{
+    font-size: 2.5rem;
+    color: rgb(255, 0, 64);
+    font-family: "Fruktur", cursive;
+    text-shadow: 2.5px 0 rgb(255, 158, 179);
+    
+  }
+  .manual{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "Dosis", cursive;
+    
+  }
+  
+  .guessField{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Righteous', cursive;
+  }
+
+  .guessSubmit{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Righteous', cursive;
+  }
+
+  .result{
+      text-align: center;
+    font-size: 2rem;
+   color: black;
+   font-family: 'Righteous', cursive;
+    
+
+  }
+
+  .history{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Dosis", cursive;
+  }
+  .turn{
+      text-align: center;
+    font-size: 1rem;
+    color: black;
+    font-family: "Dosis", cursive;
+   
+  }
+  button{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: "Dosis", cursive;
+    background-color: rgb(17, 0, 255);
+  }

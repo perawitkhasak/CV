@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +11,21 @@
 
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-
-
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
  integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="anonymous" />
-
+ <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-    <!-- =============================================== -->
-    <header class="main-header">
+    
+    <div class="wrapper">
+  
+      <header class="main-header">
         <!-- Logo -->
         <a href="index.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -47,96 +51,74 @@
           </div>
         </nav>
       </header>
-    <!-- Left side column. contains the sidebar -->
-    <aside class="main-sidebar">
-      <!-- sidebar: style can be found in sidebar.less -->
-      <section class="sidebar">
-        <!-- Sidebar user panel -->
-        <div class="user-panel">
-          <div class="pull-left image">
-            <img src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t1.0-0/p640x640/70428612_3050974738265495_3095121048891293696_o.jpg?_nc_cat=111&_nc_ohc=-0BPveT32FcAQlbr0ctNgY2JADjBIuC9rcd8Q948shvLkDs4sRIqEeeVg&_nc_ht=scontent.fcnx4-1.fna&_nc_tp=1&oh=44cf81acc029296fe45c1330bac81aa2&oe=5EA52C0C" class="img-circle" alt="User Image">
-          </div>
-          <div class="pull-left info">
-            <p>Perawit Khasak</p>
-            
-          </div>
-        </div>
-        
-        <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu" data-widget="tree">
-          
-          
-          <li>
-            <a href="gallary.html">
-              <i class="fa fa-files-o"></i><span>Gallary</span>
+    
+      <!-- =============================================== -->
+    
+      <!-- Left side column. contains the sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="https://scontent.fcnx4-1.fna.fbcdn.net/v/t1.0-0/p640x640/70428612_3050974738265495_3095121048891293696_o.jpg?_nc_cat=111&_nc_ohc=-0BPveT32FcAQlbr0ctNgY2JADjBIuC9rcd8Q948shvLkDs4sRIqEeeVg&_nc_ht=scontent.fcnx4-1.fna&_nc_tp=1&oh=44cf81acc029296fe45c1330bac81aa2&oe=5EA52C0C" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Perawit Khasak</p>
               
-            </a>
-           </li>
-          <li>
-            <a href="contact.html">
-              <i class="fa fa-th"></i> <span>Contact</span>
-            </a>
-          </li>
-          <li>
-            <a href="randnum.html">
-              <i class="fa fa-th"></i> <span>Game</span>
-            </a>
-          </li>
+            </div>
+          </div>
           
-        </ul>
-      </section>
-      <!-- /.sidebar -->
-    </aside>
-  
-    <!-- =============================================== -->
-    <div class="content-wrapper">
-    <section class="content" > 
-    <table width="80%" align="center" style="padding: 15px;   border:1px solid;">
-           
-        <tbody><tr>
-            <td><h3><label>Subject:</label></h3></td>
-            <td><input name="subject" width="50" type="text" value=""> </td>
-        </tr>
-        <tr>
-            <td><h3> <label>Massage:</label></h3></td>
-            <td> <textarea name="msg"></textarea> </td>
-        </tr>
-        <tr>
-            <td><h3><label>Name:</label></h3></td>
-            <td><input name="fullname" type="text" value=""> </td>
-        </tr>
-        <tr>
-            <td><h3><label>Gender:</label></h3></td>
-            <td>
-                <input name="gender" type="radio" value="male"> male 
-                <input name="gender" type="radio" value="female"> female 
-            </td>
-        </tr>
-        <tr>
-            <td><h3><label>Phone:</label></h3></td>
-            <td><input name="phone" type="tel" value=""> </td>
-        </tr>
-        <tr>
-            <td><h3><label>Email:</label></h3></td>
-            <td><input type="email" value=""></td>
-        </tr>
-        <tr>
-            <td><h3><label>File Addition</label></h3></td>
-            <td>
-            <input type="file" name="fileupload">
-            <input name="btnSubmit" type="submit" value="submit">
-        </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><input name="submit" type="submit" value="submit"></td>
-        </tr>
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu" data-widget="tree">
+            
+            
+            <li>
+              <a href="gallary.html">
+                <i class="fa fa-files-o"></i><span>Gallary</span>
+                
+              </a>
+             </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa fa-th"></i> <span>Contact</span>
+              </a>
+            </li>
+            <li>
+              <a href="randnum.html">
+                <i class="fa fa-th"></i> <span>Game</span>
+              </a>
+            </li>
+            
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+    
+      <!-- =============================================== -->
+    
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="background-color: white;">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <div class="Headergame">Guessing Game !!</div>
+          <div class="picgame"><img src="https://i.pinimg.com/474x/ce/23/41/ce2341d214a58a3eac25ac0a7029bf7e.jpg" alt="" width="150" height="150"></div>
+          <div class="Discription">random number between 0-100 in box.You can guess just 10 times.Good luck :) </div>
+        </section>
+        <div class="form"> 
+            <input type = "text" id = "guessField" class = "guessField" placeholder="Enter a Number Here !"> 
+            <input type = "submit" value = "Submit guess" class = "guessSubmit" id = "submitguess"> 
+        </div>
+    <div class="result"></div>
+    <div class="history"></div> <div class="turn"></div>
+        
+    
+        <!-- Main content -->
+      
+      
+        <section>
 
-    </section>
-    </tbody></table>
-  </div>
-    <!-- Content Wrapper. Contains page content -->
-   
+        </section>
         <!-- /.content -->
       </div>
       <!-- /.content-wrapper -->
@@ -151,8 +133,10 @@
     
       <div class="control-sidebar-bg"></div>
   </div>
-      
-    <script
+  
+  
+  <script src="index.js"></script>
+      <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
