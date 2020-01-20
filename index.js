@@ -1,5 +1,5 @@
 var y = Math.floor(Math.random()*100)+1; 
-    let gamepiclose='loseface.jpg';
+    let img1='img/loseface.jpg';
     var guess = 0; 
     
     let guessed;
@@ -14,7 +14,8 @@ var y = Math.floor(Math.random()*100)+1;
             }else{
                 document.querySelector('.turn').textContent = 10 - guess + " left";
                 if(x == y){     
-                    document.querySelector('.result').textContent = "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " GUESS ";                   
+                    document.querySelector('.result').textContent = "CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " + guess + " TIME ! "; 
+                    document.querySelector('.picgame').setAttribute('src','http://www.linese.com/wp-content/uploads/2019/09/scottish-fold-cat.jpg');                  
                     guess = 12;
                 }else if(x > y){     
                         guess++;
@@ -22,7 +23,7 @@ var y = Math.floor(Math.random()*100)+1;
                     }else{ 
                         guess++; 
                         document.querySelector('.result').textContent = "Too Low"; 
-                        document.querySelector('.picgame').setAttribute('src',gamepiclose);
+                        
                     } 
                     if(guess == 2){
                         guessed = x;
@@ -35,7 +36,8 @@ var y = Math.floor(Math.random()*100)+1;
 
         if(guess == 11){
                 document.querySelector('.result').textContent = "YOU LOSE! THE NUMBER IS " + y + "."; 
-                document.querySelector('.picgame').setAttribute('src',gamepiclose);
+                document.querySelector('.picgame').setAttribute('src','img/loseface.jpg');
+               
         }
     
     }
