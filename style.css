@@ -28,17 +28,10 @@
 }
 
 
-  h2{
-    font-size: 2.5rem;
-    color: rgb(255, 0, 64);
-    font-family: "Fruktur", cursive;
-    text-shadow: 2.5px 0 rgb(255, 158, 179);
-    
-  }
   .manual{
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
-    font-family: "Dosis", cursive;
+    font-family: 'Righteous', cursive;
     
   }
   
@@ -50,7 +43,7 @@
 
   .guessSubmit{
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
     font-family: 'Righteous', cursive;
   }
 
@@ -67,18 +60,17 @@
     text-align: center;
     font-size: 1.5rem;
     color: black;
-    font-family: "Dosis", cursive;
+    font-family: 'Righteous', cursive;
   }
   .turn{
       text-align: center;
     font-size: 1rem;
     color: black;
-    font-family: "Dosis", cursive;
+    font-family: 'Righteous', cursive;
    
   }
   button{
     font-size: 2rem;
-    color: rgb(255, 255, 255);
-    font-family: "Dosis", cursive;
-    background-color: rgb(17, 0, 255);
+    color: rgb(15, 40, 54);
+    font-family: 'Righteous', cursive;
   }

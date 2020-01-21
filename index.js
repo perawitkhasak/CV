@@ -3,7 +3,12 @@ var y = Math.floor(Math.random()*100)+1;
     var guess = 0; 
     
     let guessed;
-
+    document.addEventListener('keydown',function(event){
+        console.log(event.key);
+        if(key='r'){
+           window.onreset;
+        }
+    })
     document.getElementById("submitguess").onclick = function(){ 
            
         var x = document.getElementById("guessField").value; 
