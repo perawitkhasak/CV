@@ -70,6 +70,8 @@
    
   }
   button{
+    text-align: center;
+   
     font-size: 2rem;
     color: rgb(15, 40, 54);
     font-family: 'Righteous', cursive;
