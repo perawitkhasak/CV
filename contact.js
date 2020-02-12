@@ -85,8 +85,7 @@ let firebaseConfig = {
         .catch(function(error) {
             console.error("Error adding document: ", error);
         });
- 
-
+        
  return true;
 }
 
@@ -115,5 +114,45 @@ function validateForm() {
 }
 
 
+let m = 0.0
+let f = 0.0
+let o = 0.0
+let count = 0.0
+db.collection('users').onSnapshot(doc => {
+    let table =  $('tbody')[0]
+    document.querySelectorAll   ("tbody tr").forEach(item => item.remove())
+    
+    doc.forEach(item=>{
+        let row = table.insertRow(-1)
+        let firstcell = row.insertCell(0)
+        let secoundCell = row.insertCell(1)
+        let tirdCell = row.insertCell(2)
+        let forthCell = row.insertCell(3)
+        firstcell.textContent = item.data().Firstname   
+        secoundCell.textContent=item.data().Lastname
+        tirdCell.textContent=item.data().Email
+       
+        if(item.data().GenderOption =="option1" ){
+            forthCell.textContent = "male";
+            m++;
+            count++;
+        }else if(item.data().GenderOption == "option2"){
+            forthCell.textContent = "female";
+            f++;
+            count++;
+        }else if(item.data().GenderOption == "option3"){
+            forthCell.textContent = "Other";
+            o++;
+            count++;
+        }
+        $('#Mstat').text("Male: "+m/count*100+"%")
+        $('#Fstat').text("Female: "+f/count*100+"%")
+        $('#Ostat').text("Other: "+o/count*100+"%")
 
+    //     let subjectCell = document.createTextNode(item.data().subject)
+    //     let gradeCell = document.createTextNode(item.data().grade)
+    //   firstcell.appendChild(subjectCell) 
+    //   secoundCell.appendChild(gradeCell)
+    })
 
+})
